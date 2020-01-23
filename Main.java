@@ -41,8 +41,8 @@ class Main {
 			Scanner scanner = new Scanner(new File(inpFile));
 			int Row = 0;
       int tokenCounter=0;
-			System.out.println("\nNum\tROW\tCOL\t\tLexem\t\tToken");
-			System.out.println("----------------------------------");
+			System.out.println("\nNum\tROW\tCOL\t  Lexem\t\tToken");
+			System.out.println("--------------------------------------------------");
 			while (scanner.hasNextLine()) {
 				Row++;
 				String str = scanner.nextLine();
@@ -66,8 +66,8 @@ class Main {
 				}
 			}
 			scanner.close();
-      System.out.println("----------------------------------");
-      System.out.printf("Found %d tokens\n",tokenCounter);
+      System.out.println("--------------------------------------------------");
+      System.out.printf("Found %d tokens\n\n\n",tokenCounter);
 		} catch(FileNotFoundException e) {
 			e.printStackTrace();
 		}
