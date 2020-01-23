@@ -20,7 +20,7 @@ class Main {
     char dir = search.charAt(0);
     Integer length = key.length();    
     String result = row.toString()+ "\t" + col.toString() + "\t" + key + "\t";
-    String path = "./dataset/" + dir + "/" + length.toString();    
+    String path = "./dictionary/" + dir + "/" + length.toString();    
     String res;
     try{
       Scanner scanner = new Scanner(new File(path));
@@ -44,7 +44,7 @@ class Main {
     try {
     Scanner scanner = new Scanner(new File(inpFile));
     int Row  = 0 ;
-	System.out.println("ROW\tCOL\tLexem\t\tToken");	
+	System.out.println("ROW\tCOL\tLexem\tToken");	
       while (scanner.hasNextLine()) {
         Row++;
         String str = scanner.nextLine();	
